@@ -155,10 +155,10 @@ class Bird(pygame.sprite.Sprite):
 
 
 def create_pipe():
-    heights = [HEIGHT // 2, HEIGHT // 3, HEIGHT - BASE_IMG.get_height() - 200, HEIGHT - 400, HEIGHT - 200]
+    heights = [HEIGHT / 2, HEIGHT / 2.5, HEIGHT / 1.5, HEIGHT / 2.25, HEIGHT / 1.75]
     x = randint(0, len(heights) - 1)
     pipe = PIPE_IMG.get_rect(topleft=(WIDTH + PIPE_IMG.get_width(), heights[x]))
-    pipe1 = PIPE_IMG_FILP.get_rect(bottomleft=(WIDTH + PIPE_IMG.get_width(), heights[x] - 200))
+    pipe1 = PIPE_IMG_FILP.get_rect(bottomleft=(WIDTH + PIPE_IMG.get_width(), heights[x] - 250))
     return [pipe, pipe1]
 
 
